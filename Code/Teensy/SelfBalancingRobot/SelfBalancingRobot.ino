@@ -1,4 +1,5 @@
 #include <Wire.h>
+#include <Encoder.h>
 
 #define I2C_ADDRESS 0x58
 
@@ -14,20 +15,30 @@ const int LEFT_L_PWM  = 5;
 const int RIGHT_R_PWM = 8;
 const int RIGHT_L_PWM = 9;
 
-// Stored values
+// Encoders
+Encoder leftEnc(14, 15);
+Encoder rightEnc(16, 17);
+
+// Stored PWM values
 uint8_t left_r_pwm  = 0;
 uint8_t left_l_pwm  = 0;
 uint8_t right_r_pwm = 0;
 uint8_t right_l_pwm = 0;
 
+// Stored enable values
 bool left_r_en  = false;
 bool left_l_en  = false;
 bool right_r_en = false;
 bool right_l_en = false;
 
+// Encoder counts (volatile since accessed in ISR and main loop)
+volatile int32_t left_count  = 0;
+volatile int32_t right_count = 0;
+
 void setup() {
   Wire.begin(I2C_ADDRESS);
   Wire.onReceive(receiveEvent);
+  Wire.onRequest(requestEvent);
 
   pinMode(LEFT_R_EN, OUTPUT);
   pinMode(LEFT_L_EN, OUTPUT);
@@ -38,6 +49,11 @@ void setup() {
   pinMode(LEFT_L_PWM, OUTPUT);
   pinMode(RIGHT_R_PWM, OUTPUT);
   pinMode(RIGHT_L_PWM, OUTPUT);
+
+  analogWriteFrequency(LEFT_R_PWM,  20000);
+  analogWriteFrequency(LEFT_L_PWM,  20000);
+  analogWriteFrequency(RIGHT_R_PWM, 20000);
+  analogWriteFrequency(RIGHT_L_PWM, 20000);
 }
 
 void loop() {
@@ -50,6 +66,23 @@ void loop() {
   analogWrite(LEFT_L_PWM,  left_l_pwm);
   analogWrite(RIGHT_R_PWM, right_r_pwm);
   analogWrite(RIGHT_L_PWM, right_l_pwm);
+
+  left_count  = leftEnc.read();
+  right_count = rightEnc.read();
+}
+
+// Send encoder counts to CODESYS on request (8 bytes: 4 per encoder)
+void requestEvent() {
+  uint8_t buf[8];
+  buf[0] = (left_count >> 24) & 0xFF;
+  buf[1] = (left_count >> 16) & 0xFF;
+  buf[2] = (left_count >> 8)  & 0xFF;
+  buf[3] =  left_count        & 0xFF;
+  buf[4] = (right_count >> 24) & 0xFF;
+  buf[5] = (right_count >> 16) & 0xFF;
+  buf[6] = (right_count >> 8)  & 0xFF;
+  buf[7] =  right_count        & 0xFF;
+  Wire.write(buf, 8);
 }
 
 // Receive I2C data from CODESYS
