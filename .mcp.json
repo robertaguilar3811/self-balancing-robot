@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "codesys": {
+      "command": "codesys-mcp-tool",
+      "args": ["--codesys-path", "C:\\Program Files\\CODESYS 3.5.22.0\\CODESYS\\Common\\CODESYS.exe", "--codesys-profile", "CODESYS V3.5 SP22"]
+    }
+  }
+}

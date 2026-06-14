@@ -26,11 +26,9 @@ bool right_r_en = false;
 bool right_l_en = false;
 
 void setup() {
-  Serial.begin(115200);
   Wire.begin(I2C_ADDRESS);
   Wire.onReceive(receiveEvent);
 
-  // Set pins
   pinMode(LEFT_R_EN, OUTPUT);
   pinMode(LEFT_L_EN, OUTPUT);
   pinMode(RIGHT_R_EN, OUTPUT);
@@ -43,26 +41,15 @@ void setup() {
 }
 
 void loop() {
-  // Apply enable signals
   digitalWrite(LEFT_R_EN,  left_r_en  ? HIGH : LOW);
   digitalWrite(LEFT_L_EN,  left_l_en  ? HIGH : LOW);
   digitalWrite(RIGHT_R_EN, right_r_en ? HIGH : LOW);
   digitalWrite(RIGHT_L_EN, right_l_en ? HIGH : LOW);
 
-  // Apply PWM signals
   analogWrite(LEFT_R_PWM,  left_r_pwm);
   analogWrite(LEFT_L_PWM,  left_l_pwm);
   analogWrite(RIGHT_R_PWM, right_r_pwm);
   analogWrite(RIGHT_L_PWM, right_l_pwm);
-
-  delay(10); // 100 Hz update
-  Serial.print("LEFT_R_EN: ");
-  Serial.println(left_r_en);
-  delay(10);
-  Serial.print("LEFT_L_EN: ");
-  Serial.println(left_l_en);
-  //Serial.println(left_r_pwm);
-  //Serial.println(left_l_pwm);
 }
 
 // Receive I2C data from CODESYS
