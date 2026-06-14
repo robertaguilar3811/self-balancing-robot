@@ -1,0 +1,3 @@
+[console_scripts]
+joy_modbus_bridge_node = joy_modbus_bridge.joy_modbus_bridge_node:main
+

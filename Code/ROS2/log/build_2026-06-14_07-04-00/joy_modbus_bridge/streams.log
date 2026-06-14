@@ -1,0 +1,39 @@
+[1.115s] Invoking command in '/home/rj/Documents/SelfBalancingRobot/Code/ROS2/src/joy_modbus_bridge': PYTHONPATH=/home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_modbus_bridge build --build-base /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/build install --record /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/install.log --single-version-externally-managed install_data
+[1.515s] running egg_info
+[1.516s] creating ../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info
+[1.516s] writing ../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info/PKG-INFO
+[1.516s] writing dependency_links to ../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info/dependency_links.txt
+[1.516s] writing entry points to ../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info/entry_points.txt
+[1.516s] writing requirements to ../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info/requires.txt
+[1.517s] writing top-level names to ../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info/top_level.txt
+[1.517s] writing manifest file '../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info/SOURCES.txt'
+[1.518s] reading manifest file '../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info/SOURCES.txt'
+[1.519s] writing manifest file '../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info/SOURCES.txt'
+[1.519s] running build
+[1.519s] running build_py
+[1.519s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/build
+[1.519s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/build/lib
+[1.519s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/build/lib/joy_modbus_bridge
+[1.519s] copying joy_modbus_bridge/joy_modbus_bridge_node.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/build/lib/joy_modbus_bridge
+[1.519s] copying joy_modbus_bridge/__init__.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/build/lib/joy_modbus_bridge
+[1.519s] running install
+[1.520s] running install_lib
+[1.520s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/lib/python3.10/site-packages/joy_modbus_bridge
+[1.520s] copying /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/build/lib/joy_modbus_bridge/joy_modbus_bridge_node.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/lib/python3.10/site-packages/joy_modbus_bridge
+[1.520s] copying /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/build/lib/joy_modbus_bridge/__init__.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/lib/python3.10/site-packages/joy_modbus_bridge
+[1.522s] byte-compiling /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/lib/python3.10/site-packages/joy_modbus_bridge/joy_modbus_bridge_node.py to joy_modbus_bridge_node.cpython-310.pyc
+[1.523s] byte-compiling /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/lib/python3.10/site-packages/joy_modbus_bridge/__init__.py to __init__.cpython-310.pyc
+[1.523s] running install_data
+[1.524s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/share/ament_index
+[1.524s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/share/ament_index/resource_index
+[1.524s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/share/ament_index/resource_index/packages
+[1.524s] copying resource/joy_modbus_bridge -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/share/ament_index/resource_index/packages
+[1.524s] copying package.xml -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/share/joy_modbus_bridge
+[1.524s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/share/joy_modbus_bridge/launch
+[1.524s] copying launch/joy_modbus_bridge_launch.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/share/joy_modbus_bridge/launch
+[1.524s] running install_egg_info
+[1.526s] Copying ../../build/joy_modbus_bridge/joy_modbus_bridge.egg-info to /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/lib/python3.10/site-packages/joy_modbus_bridge-0.0.1-py3.10.egg-info
+[1.527s] running install_scripts
+[1.555s] Installing joy_modbus_bridge_node script to /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/lib/joy_modbus_bridge
+[1.555s] writing list of installed files to '/home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/install.log'
+[1.578s] Invoked command in '/home/rj/Documents/SelfBalancingRobot/Code/ROS2/src/joy_modbus_bridge' returned '0': PYTHONPATH=/home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_modbus_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_modbus_bridge build --build-base /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/build install --record /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_modbus_bridge/install.log --single-version-externally-managed install_data
