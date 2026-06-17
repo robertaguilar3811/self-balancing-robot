@@ -1,0 +1,39 @@
+[0.965s] Invoking command in '/home/rj/Documents/SelfBalancingRobot/Code/ROS2/src/joy_udp_bridge': PYTHONPATH=/home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_udp_bridge build --build-base /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/build install --record /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/install.log --single-version-externally-managed install_data
+[1.351s] running egg_info
+[1.351s] creating ../../build/joy_udp_bridge/joy_udp_bridge.egg-info
+[1.351s] writing ../../build/joy_udp_bridge/joy_udp_bridge.egg-info/PKG-INFO
+[1.352s] writing dependency_links to ../../build/joy_udp_bridge/joy_udp_bridge.egg-info/dependency_links.txt
+[1.352s] writing entry points to ../../build/joy_udp_bridge/joy_udp_bridge.egg-info/entry_points.txt
+[1.352s] writing requirements to ../../build/joy_udp_bridge/joy_udp_bridge.egg-info/requires.txt
+[1.352s] writing top-level names to ../../build/joy_udp_bridge/joy_udp_bridge.egg-info/top_level.txt
+[1.352s] writing manifest file '../../build/joy_udp_bridge/joy_udp_bridge.egg-info/SOURCES.txt'
+[1.353s] reading manifest file '../../build/joy_udp_bridge/joy_udp_bridge.egg-info/SOURCES.txt'
+[1.354s] writing manifest file '../../build/joy_udp_bridge/joy_udp_bridge.egg-info/SOURCES.txt'
+[1.354s] running build
+[1.354s] running build_py
+[1.354s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/build
+[1.354s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/build/lib
+[1.354s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/build/lib/joy_udp_bridge
+[1.354s] copying joy_udp_bridge/joy_udp_bridge_node.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/build/lib/joy_udp_bridge
+[1.354s] copying joy_udp_bridge/__init__.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/build/lib/joy_udp_bridge
+[1.354s] running install
+[1.354s] running install_lib
+[1.355s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/lib/python3.10/site-packages/joy_udp_bridge
+[1.355s] copying /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/build/lib/joy_udp_bridge/joy_udp_bridge_node.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/lib/python3.10/site-packages/joy_udp_bridge
+[1.355s] copying /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/build/lib/joy_udp_bridge/__init__.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/lib/python3.10/site-packages/joy_udp_bridge
+[1.356s] byte-compiling /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/lib/python3.10/site-packages/joy_udp_bridge/joy_udp_bridge_node.py to joy_udp_bridge_node.cpython-310.pyc
+[1.357s] byte-compiling /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/lib/python3.10/site-packages/joy_udp_bridge/__init__.py to __init__.cpython-310.pyc
+[1.357s] running install_data
+[1.357s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/share/ament_index
+[1.357s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/share/ament_index/resource_index
+[1.357s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/share/ament_index/resource_index/packages
+[1.357s] copying resource/joy_udp_bridge -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/share/ament_index/resource_index/packages
+[1.358s] copying package.xml -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/share/joy_udp_bridge
+[1.358s] creating /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/share/joy_udp_bridge/launch
+[1.358s] copying launch/joy_udp_bridge_launch.py -> /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/share/joy_udp_bridge/launch
+[1.358s] running install_egg_info
+[1.360s] Copying ../../build/joy_udp_bridge/joy_udp_bridge.egg-info to /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/lib/python3.10/site-packages/joy_udp_bridge-0.0.1-py3.10.egg-info
+[1.360s] running install_scripts
+[1.388s] Installing joy_udp_bridge_node script to /home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/lib/joy_udp_bridge
+[1.388s] writing list of installed files to '/home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/install.log'
+[1.410s] Invoked command in '/home/rj/Documents/SelfBalancingRobot/Code/ROS2/src/joy_udp_bridge' returned '0': PYTHONPATH=/home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rj/Documents/SelfBalancingRobot/Code/ROS2/install/joy_udp_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_udp_bridge build --build-base /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/build install --record /home/rj/Documents/SelfBalancingRobot/Code/ROS2/build/joy_udp_bridge/install.log --single-version-externally-managed install_data

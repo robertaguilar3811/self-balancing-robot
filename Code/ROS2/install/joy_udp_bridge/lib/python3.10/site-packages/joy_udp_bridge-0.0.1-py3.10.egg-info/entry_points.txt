@@ -1,0 +1,3 @@
+[console_scripts]
+joy_udp_bridge_node = joy_udp_bridge.joy_udp_bridge_node:main
+
